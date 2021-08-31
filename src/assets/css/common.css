@@ -1,4 +1,153 @@
-body {
+:root {
+
+}
+
+* {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
     font-family: 'Roboto';
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+nav {
+    height: 50px;
+    width: 100%;
+    padding: 35px 45px;
+}
+
+.header__container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 0 10%;
+}
+
+.header__container--menu ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.header__container--menu ul li {
+    list-style: none;
+    font-weight: bold;
+    color: #eef9f7;
+}
+
+/* .main__container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: cover;
+} */
+
+.background__main {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: cover;
+}
+
+.content__main {
+    display: flex;
+    height: 80%;
+    place-items: center;
+}
+
+.main__social {
+    display: flex;
+    flex-direction: column;
+    width: 5%;
+    place-items: center;
+    border-radius: 50px;
+    border: 1px solid #c3d1e7;
+    height: 250px;
+    place-content: center;
+    gap: 40px;
+    margin-left: 5%;
+    padding: 0 10px;
+}
+
+.main__information {
+    margin: 0 5%;
+}
+
+.main__social--logo {
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.twitter {
+   background-image: url("../icons/096-twitter.svg"); 
+}
+
+.facebook {
+    background-image: url("../icons/023-facebook.svg"); 
+ }
+
+ .linkedin {
+    background-image: url("../icons/052-linkedin.svg"); 
+ }
+
+ .instagram {
+    background-image: url("../icons/044-instagram.svg"); 
+ }
+
+ .main__information h4 {
+    font-size: 24px;
+    color: #346ae2;
+    letter-spacing: 0.25rem;
+    font-weight: 400;
+ }
+
+ .main__information h3 {
+     margin-top: 10px;
+     font-size: 36px;
+ }
+
+ .main__information h5 {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #555961;
+} 
+
+.main__information p {
+    margin-top: 5px;
+    color: #9fa5b3;
+}
+
+.main__information--hire {
+    margin-top: 25px;
+    padding: 15px 25px;
+    border-radius: 8px;
+    border: none;
+    background-color: #2d75d3;
+    color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.main__information--hire:hover {
+    background-color: #5f93d6;
+    cursor: pointer;
+}
+
+.main__img {
+    margin-right: 10%;
+}
+
+.main__img img {
+    width: 500px;
+    margin-right: 10%;
 }
